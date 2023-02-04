@@ -1,5 +1,16 @@
 const trigger = document.querySelector('#abaidiomas .trigger');
 const languages = document.querySelector('#abaidiomas div .languages');
+const personal = document.getElementById('pernonal-item');
+const trecoText = document.querySelector('p.description-item-grade');
+const pokedexText = document.querySelector('#pokedex-grade div p');
+const climaText = document.querySelector('#clima-grade div p');
+const climaTitleText = document.querySelector('#clima-grade h2');
+const calculadoraText = document.querySelector('#calculadora-grade');
+const jogoDaVelhaText = document.querySelector('#jogoDaVelha-grade');
+const GitFindText = document.querySelector('#GitFind-grade');
+const conversorText = document.querySelector('#converdor-coin-grade');
+const instagramText = document.querySelector('#instagram-clone-grade');
+const portfolioBasicText = document.querySelector('#basic-portfolio-grade');
 
 
 document.getElementById("selector").addEventListener("click", function () {

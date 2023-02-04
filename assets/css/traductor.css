@@ -24,8 +24,8 @@
     max-height: 150px;
     overflow-y: scroll;
     background-color: #434343;
-    border: 1px solid gray;
-    border-radius: 8%;
+    border: 2px solid gray;
+    border-radius: 4%;
     color: white;
 }
 
@@ -38,15 +38,14 @@ li {
 
 }
 
+
 #optionsList::-webkit-scrollbar {
-    width: 0.2em;
-    background-color: #434343;
+    width: .1rem;
+
 }
 
-#optionsList::-webkit-scrollbar-thumb {
-    background-color: #000000;
-}
-
+#optionsList::-webkit-scrollbar,
+#optionsList::-webkit-scrollbar-thumb,
 #optionsList::-webkit-scrollbar-thumb:hover {
-    background-color: #555555;
+    background-color: transparent;
 }

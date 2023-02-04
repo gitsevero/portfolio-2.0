@@ -66,5 +66,38 @@ function portugues() {
     <li>Ingles-(basico)</li>
     <li>Espanhol-(intermediário)</li>`;
 
+    personal.innerHTML = `   <ul class="p1"> <li>pontualidade</li> <li>facil aprendizado</li><li>Facilidade de comunicação</li>
+        </ul><ul class="p2"><li>Organização</li><li>Trabalho em equipe</li><li>Flexibilidade</li></ul>`;
+
+    trecoText.innerHTML = `Jogo de advinhar palavras em JavaScript
+    consumindo a API do <a href="https://openai.com/api/">CHATGPT3</a> para gerar palavras aleatórias e dicas sobre as palavras.`;
+
+    pokedexText.innerHTML = 'pokedex um site de busca de pokemons com html ,css e JavaScript consumindo a API PokeApi';
+
+    climaTitleText.innerHTML = `Informação do clima.`;
+    climaText.innerHTML = `site feito para informar o clima da cidade buscada , feito consumindo tres API's ,uma para o tempo outra para a 
+    imagem da cidade no background e terceira para as bandeiras`;
+
+
+    calculadoraText.children[0].innerHTML = `Calculadora`;
+    calculadoraText.children[2].innerHTML = `Uma calculadora simples e responsiva feita com react`;
+
+    jogoDaVelhaText.children[0].innerHTML = `Jogo da velha `;
+    jogoDaVelhaText.children[2].innerHTML = `Projeto academico desenvolvendo o Jogo da velha com JavaScript, Html e Css`;
+
+    GitFindText.children[2].innerHTML = `Um buscador de perfis e repositório do GitHub feito com React consumindo a API do GitHub`;
+
+    conversorText.children[0].innerHTML = `Conversor de moeda`;
+    conversorText.children[2].innerHTML = `Um conversor de moeda basico consindo a API do Fastforex`;
+
+    instagramText.children[2].innerHTML = `Um clone das paginas de login e cadastro do instagram`;
+
+    portfolioBasicText.children[0].innerHTML = `portfólio`;
+    portfolioBasicText.children[2].innerHTML = `Um portfólio basico feito apenas com Html e Css`;
+
+
+
+
+
 
 };

@@ -38,13 +38,40 @@ function ingles() {
     let textNode2 = document.querySelector('section.acordeon button h2');
     textNode2.textContent = 'About';
 
-
-
-
-
     trigger.innerHTML = '<h2>Languages</h2>';
-    languages.innerHTML = ` <li>Portuguese-(native)</li>
-    <li>English-(basic)</li>
-    <li>Spanish-(intermediate)</li>`;
+    languages.innerHTML = ` <li>Portuguese-(native)</li> <li>English-(basic)</li> <li>Spanish-(intermediate)</li>`;
+
+    personal.innerHTML = `<ul class="p1"><li>Punctuality</li><li>Easy learning</li><li>Communication ease</li>
+    </ul><ul class="p2"><li>Organization</li><li>Teamwork</li><li>Flexibility</li></ul>`;
+
+    trecoText.innerHTML = `Word guessing game in JavaScript 
+    consuming the API of <a href="https://openai.com/api/">CHATGPT3</a>to generate random words and hints about the words.`;
+
+    pokedexText.innerHTML = 'Pokedex: a Pokemon search website using HTML, CSS, and JavaScript consuming the PokeAPI.';
+
+    climaTitleText.innerHTML = `Weather information.`;
+    climaText.innerHTML = `Weather information website, built to inform the weather of the searched city, using three APIs, one for the weather, 
+    another for the city image background, and a third for the flags.`;
+
+    calculadoraText.children[0].innerHTML = `Calculator`;
+    calculadoraText.children[2].innerHTML = `A simple and responsive calculator made with react`;
+
+    jogoDaVelhaText.children[0].innerHTML = `game of tic-tac-toe`
+    jogoDaVelhaText.children[2].innerHTML = `Academic project developing Tic-tac-toe with JavaScript, Html and CSS`
+
+    GitFindText.children[2].innerHTML = `A profile finder and GitHub repository made with React consuming the GitHub API`;
+
+    conversorText.children[0].innerHTML = `Currency converter`;
+    conversorText.children[2].innerHTML = `A basic currency converter consuming the Fast Forex API`;
+
+    instagramText.children[2].innerHTML = `A clone of the instagram login and registration pages`;
+
+    portfolioBasicText.children[0].innerHTML = `portfolio`;
+    portfolioBasicText.children[2].innerHTML = `A basic portfolio made only with Html and CSS`;
+
+
+
+
+
 
 }
