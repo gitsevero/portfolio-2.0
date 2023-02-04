@@ -1,0 +1,70 @@
+.imggrade {
+
+    width: 200px;
+    height: 100%;
+
+}
+
+.thumb {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+.item-grade {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1rem 1rem;
+
+    padding: .5rem 0 .5rem;
+
+}
+
+.text-grade {
+    width: 100%;
+}
+
+.title-item-grade {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.description-item-grade {
+    font-size: .85rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .text-grade {
+        width: 60%;
+        margin: .5rem 5% 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+
+
+    .item-grade {
+        width: 50%;
+    }
+
+    te .acordeon.open .content.grade {
+        padding: 2rem 5rem 2rem;
+    }
+
+}
+
+.acordeon.open .content.grade {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0 0;
+
+}

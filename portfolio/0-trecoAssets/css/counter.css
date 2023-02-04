@@ -1,0 +1,982 @@
+#yready {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.container {
+  z-index: 1;
+  background-color: black;
+  text-shadow: 1px 1px 0px white;
+  color: #444;
+  width: 50%;
+  height: 80%;
+  margin: 4em auto;
+}
+
+#counter {
+
+  height: 160px;
+  width: 179px;
+  overflow: hidden;
+  position: relative;
+  font-size: 100px;
+  line-height: 140px;
+  text-align: center;
+  display: block;
+  margin-left: 35%;
+}
+
+#counter::before,
+#counter::after {
+  position: absolute;
+  white-space: pre;
+  width: 80px;
+}
+
+#counter::after {
+  content: "9 \a 8 \a 7 \a 6 \a 5 \a 4 \a 3 \a 2 \a 1 \a 0";
+  right: 10px;
+  animation: count_secs 10s linear infinite;
+}
+
+@keyframes count_tens {
+  0% {
+    transform: translateY(0px);
+  }
+
+  16.666% {
+    transform: translateY(0px);
+  }
+
+  16.6666666667% {
+    transform: translateY(-140px);
+  }
+
+  33.3326666667% {
+    transform: translateY(-140px);
+  }
+
+  33.3333333333% {
+    transform: translateY(-280px);
+  }
+
+  49.9993333333% {
+    transform: translateY(-280px);
+  }
+
+  50% {
+    transform: translateY(-420px);
+  }
+
+  66.666% {
+    transform: translateY(-420px);
+  }
+
+  66.6666666667% {
+    transform: translateY(-560px);
+  }
+
+  83.3326666667% {
+    transform: translateY(-560px);
+  }
+
+  83.3333333333% {
+    transform: translateY(-700px);
+  }
+
+  99.9993333333% {
+    transform: translateY(-700px);
+  }
+}
+
+@keyframes count_secs {
+  0% {
+    transform: translateY(0px);
+  }
+
+  9.999% {
+    transform: translateY(0px);
+  }
+
+  10% {
+    transform: translateY(-140px);
+  }
+
+  19.999% {
+    transform: translateY(-140px);
+  }
+
+  20% {
+    transform: translateY(-280px);
+  }
+
+  29.999% {
+    transform: translateY(-280px);
+  }
+
+  30% {
+    transform: translateY(-420px);
+  }
+
+  39.999% {
+    transform: translateY(-420px);
+  }
+
+  40% {
+    transform: translateY(-560px);
+  }
+
+  49.999% {
+    transform: translateY(-560px);
+  }
+
+  50% {
+    transform: translateY(-700px);
+  }
+
+  59.999% {
+    transform: translateY(-700px);
+  }
+
+  60% {
+    transform: translateY(-840px);
+  }
+
+  69.999% {
+    transform: translateY(-840px);
+  }
+
+  70% {
+    transform: translateY(-980px);
+  }
+
+  79.999% {
+    transform: translateY(-980px);
+  }
+
+  80% {
+    transform: translateY(-1120px);
+  }
+
+  89.999% {
+    transform: translateY(-1120px);
+  }
+
+  90% {
+    transform: translateY(-1260px);
+  }
+
+  99.999% {
+    transform: translateY(-1260px);
+  }
+}
+
+@keyframes counter {
+  0% {
+    transform: translateY(0%);
+  }
+
+  0.5% {
+    transform: translateY(0%);
+  }
+
+  1.6666666667% {
+    transform: translateY(-1.6666666667%);
+  }
+
+  2.1666666667% {
+    transform: translateY(-1.6666666667%);
+  }
+
+  3.3333333333% {
+    transform: translateY(-3.3333333333%);
+  }
+
+  3.8333333333% {
+    transform: translateY(-3.3333333333%);
+  }
+
+  5% {
+    transform: translateY(-5%);
+  }
+
+  5.5% {
+    transform: translateY(-5%);
+  }
+
+  6.6666666667% {
+    transform: translateY(-6.6666666667%);
+  }
+
+  7.1666666667% {
+    transform: translateY(-6.6666666667%);
+  }
+
+  8.3333333333% {
+    transform: translateY(-8.3333333333%);
+  }
+
+  8.8333333333% {
+    transform: translateY(-8.3333333333%);
+  }
+
+  10% {
+    transform: translateY(-10%);
+  }
+
+  10.5% {
+    transform: translateY(-10%);
+  }
+
+  11.6666666667% {
+    transform: translateY(-11.6666666667%);
+  }
+
+  12.1666666667% {
+    transform: translateY(-11.6666666667%);
+  }
+
+  13.3333333333% {
+    transform: translateY(-13.3333333333%);
+  }
+
+  13.8333333333% {
+    transform: translateY(-13.3333333333%);
+  }
+
+  15% {
+    transform: translateY(-15%);
+  }
+
+  15.5% {
+    transform: translateY(-15%);
+  }
+
+  16.6666666667% {
+    transform: translateY(-16.6666666667%);
+  }
+
+  17.1666666667% {
+    transform: translateY(-16.6666666667%);
+  }
+
+  18.3333333333% {
+    transform: translateY(-18.3333333333%);
+  }
+
+  18.8333333333% {
+    transform: translateY(-18.3333333333%);
+  }
+
+  20% {
+    transform: translateY(-20%);
+  }
+
+  20.5% {
+    transform: translateY(-20%);
+  }
+
+  21.6666666667% {
+    transform: translateY(-21.6666666667%);
+  }
+
+  22.1666666667% {
+    transform: translateY(-21.6666666667%);
+  }
+
+  23.3333333333% {
+    transform: translateY(-23.3333333333%);
+  }
+
+  23.8333333333% {
+    transform: translateY(-23.3333333333%);
+  }
+
+  25% {
+    transform: translateY(-25%);
+  }
+
+  25.5% {
+    transform: translateY(-25%);
+  }
+
+  26.6666666667% {
+    transform: translateY(-26.6666666667%);
+  }
+
+  27.1666666667% {
+    transform: translateY(-26.6666666667%);
+  }
+
+  28.3333333333% {
+    transform: translateY(-28.3333333333%);
+  }
+
+  28.8333333333% {
+    transform: translateY(-28.3333333333%);
+  }
+
+  30% {
+    transform: translateY(-30%);
+  }
+
+  30.5% {
+    transform: translateY(-30%);
+  }
+
+  31.6666666667% {
+    transform: translateY(-31.6666666667%);
+  }
+
+  32.1666666667% {
+    transform: translateY(-31.6666666667%);
+  }
+
+  33.3333333333% {
+    transform: translateY(-33.3333333333%);
+  }
+
+  33.8333333333% {
+    transform: translateY(-33.3333333333%);
+  }
+
+  35% {
+    transform: translateY(-35%);
+  }
+
+  35.5% {
+    transform: translateY(-35%);
+  }
+
+  36.6666666667% {
+    transform: translateY(-36.6666666667%);
+  }
+
+  37.1666666667% {
+    transform: translateY(-36.6666666667%);
+  }
+
+  38.3333333333% {
+    transform: translateY(-38.3333333333%);
+  }
+
+  38.8333333333% {
+    transform: translateY(-38.3333333333%);
+  }
+
+  40% {
+    transform: translateY(-40%);
+  }
+
+  40.5% {
+    transform: translateY(-40%);
+  }
+
+  41.6666666667% {
+    transform: translateY(-41.6666666667%);
+  }
+
+  42.1666666667% {
+    transform: translateY(-41.6666666667%);
+  }
+
+  43.3333333333% {
+    transform: translateY(-43.3333333333%);
+  }
+
+  43.8333333333% {
+    transform: translateY(-43.3333333333%);
+  }
+
+  45% {
+    transform: translateY(-45%);
+  }
+
+  45.5% {
+    transform: translateY(-45%);
+  }
+
+  46.6666666667% {
+    transform: translateY(-46.6666666667%);
+  }
+
+  47.1666666667% {
+    transform: translateY(-46.6666666667%);
+  }
+
+  48.3333333333% {
+    transform: translateY(-48.3333333333%);
+  }
+
+  48.8333333333% {
+    transform: translateY(-48.3333333333%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  50.5% {
+    transform: translateY(-50%);
+  }
+
+  51.6666666667% {
+    transform: translateY(-51.6666666667%);
+  }
+
+  52.1666666667% {
+    transform: translateY(-51.6666666667%);
+  }
+
+  53.3333333333% {
+    transform: translateY(-53.3333333333%);
+  }
+
+  53.8333333333% {
+    transform: translateY(-53.3333333333%);
+  }
+
+  55% {
+    transform: translateY(-55%);
+  }
+
+  55.5% {
+    transform: translateY(-55%);
+  }
+
+  56.6666666667% {
+    transform: translateY(-56.6666666667%);
+  }
+
+  57.1666666667% {
+    transform: translateY(-56.6666666667%);
+  }
+
+  58.3333333333% {
+    transform: translateY(-58.3333333333%);
+  }
+
+  58.8333333333% {
+    transform: translateY(-58.3333333333%);
+  }
+
+  60% {
+    transform: translateY(-60%);
+  }
+
+  60.5% {
+    transform: translateY(-60%);
+  }
+
+  61.6666666667% {
+    transform: translateY(-61.6666666667%);
+  }
+
+  62.1666666667% {
+    transform: translateY(-61.6666666667%);
+  }
+
+  63.3333333333% {
+    transform: translateY(-63.3333333333%);
+  }
+
+  63.8333333333% {
+    transform: translateY(-63.3333333333%);
+  }
+
+  65% {
+    transform: translateY(-65%);
+  }
+
+  65.5% {
+    transform: translateY(-65%);
+  }
+
+  66.6666666667% {
+    transform: translateY(-66.6666666667%);
+  }
+
+  67.1666666667% {
+    transform: translateY(-66.6666666667%);
+  }
+
+  68.3333333333% {
+    transform: translateY(-68.3333333333%);
+  }
+
+  68.8333333333% {
+    transform: translateY(-68.3333333333%);
+  }
+
+  70% {
+    transform: translateY(-70%);
+  }
+
+  70.5% {
+    transform: translateY(-70%);
+  }
+
+  71.6666666667% {
+    transform: translateY(-71.6666666667%);
+  }
+
+  72.1666666667% {
+    transform: translateY(-71.6666666667%);
+  }
+
+  73.3333333333% {
+    transform: translateY(-73.3333333333%);
+  }
+
+  73.8333333333% {
+    transform: translateY(-73.3333333333%);
+  }
+
+  75% {
+    transform: translateY(-75%);
+  }
+
+  75.5% {
+    transform: translateY(-75%);
+  }
+
+  76.6666666667% {
+    transform: translateY(-76.6666666667%);
+  }
+
+  77.1666666667% {
+    transform: translateY(-76.6666666667%);
+  }
+
+  78.3333333333% {
+    transform: translateY(-78.3333333333%);
+  }
+
+  78.8333333333% {
+    transform: translateY(-78.3333333333%);
+  }
+
+  80% {
+    transform: translateY(-80%);
+  }
+
+  80.5% {
+    transform: translateY(-80%);
+  }
+
+  81.6666666667% {
+    transform: translateY(-81.6666666667%);
+  }
+
+  82.1666666667% {
+    transform: translateY(-81.6666666667%);
+  }
+
+  83.3333333333% {
+    transform: translateY(-83.3333333333%);
+  }
+
+  83.8333333333% {
+    transform: translateY(-83.3333333333%);
+  }
+
+  85% {
+    transform: translateY(-85%);
+  }
+
+  85.5% {
+    transform: translateY(-85%);
+  }
+
+  86.6666666667% {
+    transform: translateY(-86.6666666667%);
+  }
+
+  87.1666666667% {
+    transform: translateY(-86.6666666667%);
+  }
+
+  88.3333333333% {
+    transform: translateY(-88.3333333333%);
+  }
+
+  88.8333333333% {
+    transform: translateY(-88.3333333333%);
+  }
+
+  90% {
+    transform: translateY(-90%);
+  }
+
+  90.5% {
+    transform: translateY(-90%);
+  }
+
+  91.6666666667% {
+    transform: translateY(-91.6666666667%);
+  }
+
+  92.1666666667% {
+    transform: translateY(-91.6666666667%);
+  }
+
+  93.3333333333% {
+    transform: translateY(-93.3333333333%);
+  }
+
+  93.8333333333% {
+    transform: translateY(-93.3333333333%);
+  }
+
+  95% {
+    transform: translateY(-95%);
+  }
+
+  95.5% {
+    transform: translateY(-95%);
+  }
+
+  96.6666666667% {
+    transform: translateY(-96.6666666667%);
+  }
+
+  97.1666666667% {
+    transform: translateY(-96.6666666667%);
+  }
+
+  98.3333333333% {
+    transform: translateY(-98.3333333333%);
+  }
+
+  98.8333333333% {
+    transform: translateY(-98.3333333333%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+
+  100.5% {
+    transform: translateY(-100%);
+  }
+
+  101.6666666667% {
+    transform: translateY(-101.6666666667%);
+  }
+
+  102.1666666667% {
+    transform: translateY(-101.6666666667%);
+  }
+
+  103.3333333333% {
+    transform: translateY(-103.3333333333%);
+  }
+
+  103.8333333333% {
+    transform: translateY(-103.3333333333%);
+  }
+
+  105% {
+    transform: translateY(-105%);
+  }
+
+  105.5% {
+    transform: translateY(-105%);
+  }
+
+  106.6666666667% {
+    transform: translateY(-106.6666666667%);
+  }
+
+  107.1666666667% {
+    transform: translateY(-106.6666666667%);
+  }
+
+  108.3333333333% {
+    transform: translateY(-108.3333333333%);
+  }
+
+  108.8333333333% {
+    transform: translateY(-108.3333333333%);
+  }
+
+  110% {
+    transform: translateY(-110%);
+  }
+
+  110.5% {
+    transform: translateY(-110%);
+  }
+
+  111.6666666667% {
+    transform: translateY(-111.6666666667%);
+  }
+
+  112.1666666667% {
+    transform: translateY(-111.6666666667%);
+  }
+
+  113.3333333333% {
+    transform: translateY(-113.3333333333%);
+  }
+
+  113.8333333333% {
+    transform: translateY(-113.3333333333%);
+  }
+
+  115% {
+    transform: translateY(-115%);
+  }
+
+  115.5% {
+    transform: translateY(-115%);
+  }
+
+  116.6666666667% {
+    transform: translateY(-116.6666666667%);
+  }
+
+  117.1666666667% {
+    transform: translateY(-116.6666666667%);
+  }
+
+  118.3333333333% {
+    transform: translateY(-118.3333333333%);
+  }
+
+  118.8333333333% {
+    transform: translateY(-118.3333333333%);
+  }
+
+  120% {
+    transform: translateY(-120%);
+  }
+
+  120.5% {
+    transform: translateY(-120%);
+  }
+
+  121.6666666667% {
+    transform: translateY(-121.6666666667%);
+  }
+
+  122.1666666667% {
+    transform: translateY(-121.6666666667%);
+  }
+
+  123.3333333333% {
+    transform: translateY(-123.3333333333%);
+  }
+
+  123.8333333333% {
+    transform: translateY(-123.3333333333%);
+  }
+
+  125% {
+    transform: translateY(-125%);
+  }
+
+  125.5% {
+    transform: translateY(-125%);
+  }
+
+  126.6666666667% {
+    transform: translateY(-126.6666666667%);
+  }
+
+  127.1666666667% {
+    transform: translateY(-126.6666666667%);
+  }
+
+  128.3333333333% {
+    transform: translateY(-128.3333333333%);
+  }
+
+  128.8333333333% {
+    transform: translateY(-128.3333333333%);
+  }
+
+  130% {
+    transform: translateY(-130%);
+  }
+
+  130.5% {
+    transform: translateY(-130%);
+  }
+
+  131.6666666667% {
+    transform: translateY(-131.6666666667%);
+  }
+
+  132.1666666667% {
+    transform: translateY(-131.6666666667%);
+  }
+
+  133.3333333333% {
+    transform: translateY(-133.3333333333%);
+  }
+
+  133.8333333333% {
+    transform: translateY(-133.3333333333%);
+  }
+
+  135% {
+    transform: translateY(-135%);
+  }
+
+  135.5% {
+    transform: translateY(-135%);
+  }
+
+  136.6666666667% {
+    transform: translateY(-136.6666666667%);
+  }
+
+  137.1666666667% {
+    transform: translateY(-136.6666666667%);
+  }
+
+  138.3333333333% {
+    transform: translateY(-138.3333333333%);
+  }
+
+  138.8333333333% {
+    transform: translateY(-138.3333333333%);
+  }
+
+  140% {
+    transform: translateY(-140%);
+  }
+
+  140.5% {
+    transform: translateY(-140%);
+  }
+
+  141.6666666667% {
+    transform: translateY(-141.6666666667%);
+  }
+
+  142.1666666667% {
+    transform: translateY(-141.6666666667%);
+  }
+
+  143.3333333333% {
+    transform: translateY(-143.3333333333%);
+  }
+
+  143.8333333333% {
+    transform: translateY(-143.3333333333%);
+  }
+
+  145% {
+    transform: translateY(-145%);
+  }
+
+  145.5% {
+    transform: translateY(-145%);
+  }
+
+  146.6666666667% {
+    transform: translateY(-146.6666666667%);
+  }
+
+  147.1666666667% {
+    transform: translateY(-146.6666666667%);
+  }
+
+  148.3333333333% {
+    transform: translateY(-148.3333333333%);
+  }
+
+  148.8333333333% {
+    transform: translateY(-148.3333333333%);
+  }
+
+  150% {
+    transform: translateY(-150%);
+  }
+
+  150.5% {
+    transform: translateY(-150%);
+  }
+
+  151.6666666667% {
+    transform: translateY(-151.6666666667%);
+  }
+
+  152.1666666667% {
+    transform: translateY(-151.6666666667%);
+  }
+
+  153.3333333333% {
+    transform: translateY(-153.3333333333%);
+  }
+
+  153.8333333333% {
+    transform: translateY(-153.3333333333%);
+  }
+
+  155% {
+    transform: translateY(-155%);
+  }
+
+  155.5% {
+    transform: translateY(-155%);
+  }
+
+  156.6666666667% {
+    transform: translateY(-156.6666666667%);
+  }
+
+  157.1666666667% {
+    transform: translateY(-156.6666666667%);
+  }
+
+  158.3333333333% {
+    transform: translateY(-158.3333333333%);
+  }
+
+  158.8333333333% {
+    transform: translateY(-158.3333333333%);
+  }
+
+  160% {
+    transform: translateY(-160%);
+  }
+
+  160.5% {
+    transform: translateY(-160%);
+  }
+
+  161.6666666667% {
+    transform: translateY(-161.6666666667%);
+  }
+
+  162.1666666667% {
+    transform: translateY(-161.6666666667%);
+  }
+
+  163.3333333333% {
+    transform: translateY(-163.3333333333%);
+  }
+
+  163.8333333333% {
+    transform: translateY(-163.3333333333%);
+  }
+
+  165% {
+    transform: translateY(-165%);
+  }
+
+  165.5% {
+    transform: translateY(-165%);
+  }
+
+  166.6666666667% {
+    transform: translateY(-166.6666666667%);
+  }
+
+  167.1666666667% {
+    transform: translateY(-166.6666666667%);
+  }
+}

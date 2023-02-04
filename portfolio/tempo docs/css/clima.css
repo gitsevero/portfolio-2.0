@@ -1,0 +1,59 @@
+#weather-data,
+#error-message,
+#loader,
+#suggestions {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+#weather-data {
+    padding-top: 1rem;
+}
+
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+}
+
+#weather-data span {
+    margin: 0.5rem;
+}
+
+#temperature {
+    font-size: 4rem;
+}
+
+#country {
+    width: 10%;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#description {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #umidity {
+    border-right: 1px solid #fff;
+
+}

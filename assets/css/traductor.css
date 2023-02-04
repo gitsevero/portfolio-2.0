@@ -1,0 +1,52 @@
+#selector {
+    cursor: pointer;
+    position: relative;
+}
+
+#selectedOption {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+#selectedOption img {
+    width: 15px;
+    margin: .3rem;
+}
+
+#optionsList {
+    width: 150px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: scroll;
+    background-color: #434343;
+    border: 1px solid gray;
+    border-radius: 8%;
+    color: white;
+}
+
+#optionsList img {
+    width: 15px;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#optionsList::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: #434343;
+}
+
+#optionsList::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+#optionsList::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}

@@ -1,0 +1,15 @@
+.slider {
+    color: antiquewhite;
+    font-size: 0.8rem;
+}
+
+.title-project {
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 90%;
+    align-self: center;
+}

@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: hsl(198.18, 100%, 45.29%);
+    font-family: 'POPPINS', sans-serif;
+}
+
+a {
+    color: hsl(198.18, 100%, 45.29%);
+
+}
+
+.title {
+
+    background-color: hsl(198.18, 100%, 45.29%);
+    font-family: 'Monoton', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.nivel {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.nivel p {
+    margin: 0 .1rem 0;
+}
+
+#vidas img {
+    margin-top: 5%;
+    width: 30px;
+}
+
+.sub-header {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.vidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dicas {
+    margin-right: 1rem;
+}
+
+#numberDica::after {
+    content: ' :';
+}
+
+.card-dicas {
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+
+
+
+#game-form {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    top: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.letter-input {
+    caret-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: lowercase;
+    font-size: 1.7rem;
+    text-align: center;
+    width: 3%;
+
+}
+
+
+
+#submit {
+
+    background: url(/portfolio/0-trecoAssets/img/ok.png);
+    background-color: rgba(18, 255, 58, 0.623);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border: 1px solid black;
+    min-width: 2%;
+    max-width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 1%;
+}
+
+#submit:hover {
+    scale: 1.1;
+    background-color: rgb(18, 255, 58);
+}
+
+#spanMessageJustLetter {
+    text-align: center;
+    font-weight: 900;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+
+
+#historico {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: .1rem;
+    padding: .2em;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
+    min-width: 20%;
+
+}
+
+h3#title-historico {
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+}
+
+.blue-background {
+    line-height: 3rem;
+    padding: .1rem .5rem 0;
+    font-size: 1.5rem;
+    margin-left: .1rem;
+    font-family: 'Bebas Neue', cursive;
+    transition: .5s;
+    color: black;
+    background-color: rgb(29, 227, 56);
+
+}
+
+
+
+.green-background {
+    line-height: 3rem;
+    padding: .1rem .5rem 0;
+    font-size: 1.5rem;
+    margin-left: .1rem;
+    font-family: 'Bebas Neue', cursive;
+    transition: .5s;
+    color: black;
+    background-color: rgb(208, 211, 39);
+}
+
+.red-background {
+    line-height: 3rem;
+    padding: .1rem .5rem 0;
+    font-size: 1.5rem;
+    margin-left: .1rem;
+    font-family: 'Bebas Neue', cursive;
+    transition: .5s;
+    color: black;
+    background-color: #ffffff4e
+}
+
+
+
+.jello-horizontal {
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: .5rem solid grey;
+}
+
+.jello-horizontal:hover {
+    scale: 1.1;
+}
+
+#name {
+    text-align: center;
+    font-family: 'Monoton';
+    font-size: 1.5rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+p.space {
+    margin: .5rem;
+}
+
+
+
+#nue {
+
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+#nua {
+
+    -webkit-animation: jello-vertical 2s infinite both;
+    animation: jello-vertical 2s infinite both;
+    font-size: 2rem;
+}
+
+#front {
+    font-family: 'Monoton';
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+#lost {
+    border: 2px solid hsl(198.18, 100%, 45.29%);
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    top: 25%;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 5;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+
+}
+
+#lost div {
+
+    margin-bottom: 3rem;
+}
+
+#lost button {
+    margin: 0 auto;
+    width: 20%;
+}
+
+#alerta {
+    color: red;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    top: 30%;
+    align-self: center;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    font-weight: 900;
+    -webkit-animation: heartbeat 1s ease-in-out infinite both;
+    animation: heartbeat 1S ease-in-out infinite both;
+
+}
+
+
+.caiu {
+    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#sub-header {
+    display: none;
+    -webkit-animation: slide-in-top .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+footer {
+    width: 100%;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: row;
+    color: rgba(128, 128, 128, 0.637);
+    justify-content: space-between;
+    padding: 0 10% .5rem;
+    align-items: center;
+}
+
+#criador {
+    margin-left: 10rem;
+    font-size: .85rem;
+}
+
+
+
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-26 0:26:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-26 15:38:56
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-out-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-26 16:48:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-vertical {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-vertical {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-27 0:45:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-27 14:45:54
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .letter-input {
+        width: 9.5%;
+    }
+
+    #submit {
+        position: absolute;
+        margin-top: 5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-dicas {
+        width: 100%;
+        ;
+    }
+
+    #historico {
+        top: 70%;
+        width: 100%;
+        right: 0;
+
+    }
+
+    h3#title-historico {
+        font-size: 1rem;
+    }
+
+    .red-background {
+        line-height: 2.2rem;
+        padding: 0;
+        font-family: 'Bebas Neue', cursive;
+
+
+    }
+
+    .blue-background {
+        padding: 0;
+        line-height: 2.2rem;
+        font-family: 'Bebas Neue', cursive;
+
+    }
+
+    .green-background {
+        padding: 0;
+        line-height: 2.2rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #nue {
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #counter {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    #counter::before,
+    #counter::after {
+        width: 100%;
+    }
+
+    #counter::after {
+        margin: 0;
+        right: -10px
+    }
+
+    #vidas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #vidas img {
+        width: 15px;
+        margin-top: 0%;
+    }
+
+    #alerta {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    #lost {
+        width: 90%;
+        height: 70%;
+        top: 15%;
+        font-size: 1.5rem;
+    }
+
+    #lost button {
+        width: auto;
+    }
+
+    footer {
+        font-size: .4rem;
+        padding: .2rem;
+    }
+
+    footer p {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    #criador {
+        font-size: .5rem;
+        margin: 0;
+
+    }
+
+
+
+
+}

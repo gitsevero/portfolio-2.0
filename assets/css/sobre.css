@@ -1,0 +1,19 @@
+.acordeon.open .content.sobre {
+    padding: 2rem 0 3rem;
+}
+
+
+.about {
+    font-size: .75rem;
+    margin: 0 .8rem 0;
+    text-align: justify;
+    text-indent: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        font-size: 1rem;
+        margin: 0 10rem 0;
+    }
+
+}

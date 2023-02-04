@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    font-family: minecraft;
+    color: rgb(170, 42, 80);
+    font-size: 40px;
+
+}
+
+.collun {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.final {
+    font-size: 26px;
+}
+
+.wrapper {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabuleiro {
+    border: 1px solid #000000;
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    font-size: 5rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.tabuleiro span.show {
+    opacity: 1;
+}
+
+.tabuleiro:hover {
+    box-shadow: 10px 10px 6px -6px rgb(141, 34, 69);
+    ;
+    transform: translate(-3px, -3px);
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid rgb(139, 12, 82);
+    ;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+.btn::before {
+    background: #90191929;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .btn::before {
+        display: none;
+    }
+
+    .btn1 {
+        opacity: 1;
+        color: rgb(139, 12, 82);
+    }
+
+}

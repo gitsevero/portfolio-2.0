@@ -1,0 +1,49 @@
+.name-site {
+    width: 100%;
+    position: absolute;
+    color: aliceblue;
+    justify-content: center;
+    display: none;
+    flex-direction: row;
+    font-family: 'Monoton', sans-serif;
+    font-size: 20px;
+    top: 1.5rem;
+}
+
+.title {
+    width: 100%;
+    height: 5rem;
+    border: 1px solid rgba(106, 24, 99, 0.16);
+    background-color: rgba(20, 18, 20, 0.176);
+
+}
+
+
+
+.letter {
+
+    margin-right: .5rem;
+    transform: scale(1, 1);
+    z-index: 2;
+    transition: .3s;
+}
+
+.letter:hover {
+    transform: scale(1.6, .5);
+    transition: .3s;
+}
+
+p.letter.espaço {
+    margin-right: 2rem;
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .name-site {
+        display: flex;
+        font-size: 40px;
+    }
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolio/conversor moeda  assets/assets/style.css">
+    <title>conversor de moeda | Severo dev</title>
+</head>
+
+<body onload="getCoin()">
+
+
+
+
+
+
+    <h1 class="title conversor">Conversor de moeda</h1>
+
+    <section class="input conversor">
+
+        <div class="moeda entrada">
+
+            <select class="saidaMoeda" id="entradaMoeda">
+                <option value="BRL">Real Brasileiro</option>
+                <option value="USD">Dólar americano</option>
+                <option value="BTC">Bitcoin</option>
+
+            </select>
+
+        </div>
+        <div class="moeda base">
+
+            <select class="saidaMoeda" id="saidaMoeda">
+                <option value="USD">Dólar americano</option>
+                <option value="BRL">Real Brasileiro</option>
+                <option value="BTC">Bitcoin</option>
+
+            </select>
+
+        </div>
+        <div class="moeda quantidade">
+            <input type="number" placeholder="1000" id="quantia">
+        </div>
+
+
+        <div class="moeda submit">
+            <button id="buttonMoeda" class="button">converter</button>
+        </div>
+        <div class="moeda converted">
+            <span>valor:</span>
+            <p id="converted">192.04</p>
+        </div>
+        <div class="moeda cotacao">
+            <span id="cotacaoSpan">cotação:</span>
+            <p id="contacao">0.19</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="/portfolio/conversor moeda  assets/assets/js.js"></script>
+
+</html>

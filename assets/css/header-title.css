@@ -1,0 +1,36 @@
+.h1 {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.word {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+.letter2 {
+
+    transform: scale(1, 1);
+    transition: .3s;
+}
+
+
+
+.letter2:hover {
+    transform: scale(2, .5);
+    transition: .3s;
+}
+
+
+
+
+.space {
+    padding-left: 1rem;
+}

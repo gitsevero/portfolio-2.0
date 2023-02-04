@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.153);
+    width: 100vw;
+    min-height: 60vh;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+.title.conversor {
+    margin-bottom: 5rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+
+.input.conversor {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    width: 40%;
+    min-height: 10rem;
+    border-radius: .5rem;
+    flex-direction: column;
+
+}
+
+
+
+
+.button {
+    margin: .3rem;
+    padding: .2rem;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    height: 100%;
+
+}
+
+.button:hover {
+    background-color: bisque;
+}
+
+.moeda {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: .2rem 0 .2rem;
+
+}
+
+
+
+.moeda.submit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.moeda.cotacao,
+.moeda.converted {
+    display: flex;
+    justify-content: end;
+    width: 55%;
+    margin-top: .5rem;
+}
+
+
+
+
+
+#contacao,
+#converted {
+
+    margin-left: 1rem;
+    min-width: 20%;
+    max-width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.62);
+
+}
+
+select {
+    width: 40%;
+}
+
+.moeda.entrada::before {
+    position: absolute;
+    content: 'do:';
+    margin-left: 1rem;
+}
+
+.moeda.base::before {
+    position: absolute;
+    content: 'para:';
+}
+
+.moeda.entrada::before,
+.moeda.base::before {
+    margin-right: 19rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .input.conversor {
+        width: 95%;
+
+    }
+
+    .moeda.cotacao,
+    .moeda.converted {
+        min-width: 70%;
+
+    }
+
+    #contacao,
+    #converted {
+        min-width: 50%;
+    }
+
+    h1.title.conversor {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .moeda.entrada::before,
+    .moeda.base::before {
+        margin-right: 12rem;
+    }
+
+
+
+}

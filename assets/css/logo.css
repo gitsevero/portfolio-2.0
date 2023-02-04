@@ -1,0 +1,11 @@
+.logo {
+    position: fixed;
+    width: 4rem;
+    border-radius: 50%;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.logo:hover {
+    width: 4.05rem;
+}

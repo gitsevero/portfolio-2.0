@@ -1,0 +1,83 @@
+.themeDiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+
+.themeDiv input {
+    margin: .3rem;
+    width: 25px;
+    height: 25px;
+}
+
+input::before {
+    border-radius: 10%;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: flex;
+
+}
+
+input:hover::before {
+    scale: 1.1;
+}
+
+
+
+
+
+#themeWite:before {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+}
+
+
+#themeBlack:before {
+    background-color: rgb(5, 5, 5);
+    border: 1px solid wheat;
+
+}
+
+#themeDefault:before {
+    background-color: #55569e;
+    border: 1px solid black;
+
+}
+
+#themeWite:checked::before {
+    border: 2px solid greenyellow;
+
+}
+
+#themeBlack:checked::before {
+    border: 2px solid greenyellow;
+
+}
+
+#themeDefault:checked::before {
+    border: 2px solid greenyellow;
+
+}
+
+form div label {
+    user-select: none;
+    color: transparent;
+    position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+    .themeDiv {
+        top: 3rem;
+        left: .5rem;
+    }
+
+
+
+}

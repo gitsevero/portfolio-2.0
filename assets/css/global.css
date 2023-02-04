@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    caret-color: transparent;
+}
+
+body {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+
+
+.main {
+    width: 90%;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 75%;
+        padding: 2.5rem 4rem 4rem;
+        margin: 6rem auto;
+    }
+}
