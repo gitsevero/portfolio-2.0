@@ -1,8 +1,10 @@
 .acordeon.open .content.idiomas {
+
     padding: 0;
 }
 
 .languages {
+
     font-size: .75rem;
     align-items: center;
     margin-bottom: 1rem;

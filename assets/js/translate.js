@@ -1,5 +1,5 @@
 const trigger = document.querySelector('#abaidiomas .trigger');
-const languages = document.querySelectorAll('#abaidiomas .languages');
+const languages = document.querySelector('#abaidiomas div .languages');
 
 
 document.getElementById("selector").addEventListener("click", function () {
