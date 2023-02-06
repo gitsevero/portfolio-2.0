@@ -50,6 +50,13 @@ currentSlide = currentSlide - 1
 
 
 function carregar() {
+
+    const nameSite = document.getElementsByClassName('name-site')
+    nameSite[0].innerHTML = '\n        <p class="letter">S</p>\n        <p class="letter">e</p>\n        <p class="letter">v</p>\n        <p class="letter">e</p>\n        <p class="letter">r</p>\n        <p class="letter espaço">o</p>\n        <p class="letter">d</p>\n        <p class="letter">e</p>\n        <p class="letter">v</p>\n    '
+
+
+
+
     startLanguage();
 
     let link = document.createElement("link");
@@ -68,17 +75,15 @@ function carregar() {
     document.head.appendChild(link);
 
 
-    const nameSite = document.getElementsByClassName('name-site')
+
     const h1 = document.getElementsByClassName('h1')
 
-    if (lngs1.ingles == 'on') {
+    if (lngs2.ingles == 'on') {
 
     } else {
         h1[0].innerHTML = '\n                <div class="word">\n                    <p class="letter2">O</p>\n                    <p class="letter2">l</p>\n                    <p class="letter2">a</p>\n     <p class="letter2">,</p>\n                      </div>\n                <div class="word">\n                    <p class="letter2">m</p>\n                    <p class="letter2">e</p>\n                    <p class="letter2 ">u</p>\n                              <p class="letter2 space">n</p>\n                    <p class="letter2">o</p>\n                    <p class="letter2">m</p>\n                    <p class="letter2">e</p>\n                    <p class="letter2 space">é</p>\n                </div>\n                <div class="word">\n                    <p class="letter2">S</p>\n                    <p class="letter2">e</p>\n                    <p class="letter2">v</p>\n                    <p class="letter2">e</p>\n                    <p class="letter2">r</p>\n                    <p class="letter2">o</p>\n                </div>\n            ';
 
     }
-
-    nameSite[0].innerHTML = '\n        <p class="letter">S</p>\n        <p class="letter">e</p>\n        <p class="letter">v</p>\n        <p class="letter">e</p>\n        <p class="letter">r</p>\n        <p class="letter espaço">o</p>\n        <p class="letter">d</p>\n        <p class="letter">e</p>\n        <p class="letter">v</p>\n    '
 
 
 }

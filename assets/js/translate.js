@@ -14,7 +14,7 @@ const portfolioBasicText = document.querySelector('#basic-portfolio-grade');
 const messageTextGhostTranslate = document.getElementById('message-text-ghost');
 
 
-let lngs1 = { ingles: 'off' };
+const lngs1 = { ingles: 'off' };
 
 
 
@@ -29,27 +29,26 @@ function langugeChange() {
     }
 }
 
-
-var options = document.getElementById("optionsList").getElementsByTagName("li");
-
-for (var i = 0; i < options.length; i++) {
-    options[i].addEventListener("click", function () {
-
-        document.getElementById("selectedOption").innerHTML = this.innerHTML;
-        document.getElementById("optionsList").style.display = "none";
-
-        var selectedValue = this.getAttribute("value");
-        optionsList.setAttribute("data-value", selectedValue);
-        optionsList.setAttribute("data-text", this.innerHTML);
-        optionsList.dispatchEvent(new Event("change"));
-    });
-}
-
 document.getElementById("optionsList").addEventListener("change", function () {
     let lingua = this.getAttribute("data-value");
     languageChanged(lingua);
 
 });
+
+var options = document.getElementById("optionsList").getElementsByTagName("li");
+
+for (var i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", function () {
+        document.getElementById("selectedOption").innerHTML = this.innerHTML;
+        var selectedValue = this.getAttribute("value");
+        optionsList.setAttribute("data-value", selectedValue);
+        optionsList.setAttribute("data-text", this.innerHTML);
+        optionsList.dispatchEvent(new Event("change"));
+
+    });
+}
+
+
 
 
 
@@ -65,20 +64,20 @@ function languageChanged(lingua) {
 
     } else {
         portugues()
-        lngs1.ingles = 'off'
+        lngs1.ingles = 'off';
         localStorage.setItem('lngs1', JSON.stringify(lngs1));
 
     }
 }
 
+let pessoaString = localStorage.getItem('lngs1');
+let lngs2 = JSON.parse(pessoaString);
 
 function startLanguage() {
 
-    let pessoaString = localStorage.getItem('lngs1');
-    lngs1 = JSON.parse(pessoaString);
 
 
-    if (lngs1.ingles == 'on') {
+    if (lngs2.ingles === 'on') {
         ingles();
         messageTextGhostTranslate.innerHTML = 'Hello, I hope you like my portfolio';
         document.getElementById("selectedOption").innerHTML = `<img src="/assets/img/flags/united-states.png" alt="bandeira do estados unidos"> ENG`;
@@ -86,6 +85,9 @@ function startLanguage() {
     } else {
         portugues();
     }
+
+
+
 
 }
 

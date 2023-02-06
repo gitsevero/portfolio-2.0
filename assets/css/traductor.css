@@ -1,13 +1,12 @@
 #selector {
     position: relative;
-     cursor: pointer;
-     z-index: 4;
+    cursor: pointer;
+    z-index: 4;
 }
 
 #selectedOption {
     background-color: transparent;
     border: transparent;
-    z-index: 5;
     width: 7rem;
     height: 2rem;
     display: flex;
@@ -21,10 +20,10 @@
 }
 
 #optionsList {
+    z-index: 7;
     width: 150px;
-    display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     right: 0;
     max-height: 150px;
