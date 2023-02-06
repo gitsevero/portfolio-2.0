@@ -11,16 +11,38 @@ const GitFindText = document.querySelector('#GitFind-grade');
 const conversorText = document.querySelector('#converdor-coin-grade');
 const instagramText = document.querySelector('#instagram-clone-grade');
 const portfolioBasicText = document.querySelector('#basic-portfolio-grade');
+const messageTextGhostTranslate = document.getElementById('message-text-ghost');
 
 
-document.getElementById("selector").addEventListener("click", function () {
+var lngs1 ={ ingles:''};
+let pessoaString = localStorage. getItem('lngs1');
+lngs1 = JSON. parse(pessoaString);
+
+startLanguage();
+
+
+function startLanguage() {
+    if(lngs1.ingles=='on'){
+        ingles();
+        messageTextGhostTranslate.innerHTML='Hello, I hope you like my portfolio';
+        document.getElementById("selectedOption").innerHTML=`<img src="/assets/img/flags/united-states.png" alt="bandeira do estados unidos"> ENG`;
+
+    }else{
+        portugues();
+    }
+    
+}
+
+
+ function langugeChange () {
     var optionsList = document.getElementById("optionsList");
     if (optionsList.style.display === "none") {
         optionsList.style.display = "block";
     } else {
         optionsList.style.display = "none";
     }
-});
+}
+
 
 var options = document.getElementById("optionsList").getElementsByTagName("li");
 
@@ -40,7 +62,7 @@ for (var i = 0; i < options.length; i++) {
 document.getElementById("optionsList").addEventListener("change", function () {
     let lingua = this.getAttribute("data-value");
     languageChanged(lingua);
-    console.log("Texto selecionado: " + this.getAttribute("data-text"));
+
 });
 
 
@@ -50,10 +72,16 @@ function languageChanged(lingua) {
 
     if (lingua == 'ingles') {
         ingles()
+        lngs1.ingles='on'
+        localStorage. setItem('lngs1', JSON. stringify(lngs1));
+       
+
 
     } else {
         portugues()
-
+        lngs1.ingles='off'
+        localStorage. setItem('lngs1', JSON. stringify(lngs1));
+       
     }
 }
 
