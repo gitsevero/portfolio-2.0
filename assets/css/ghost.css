@@ -1,67 +1,75 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 150px;
-    height: 100px;
-    bottom: 5%;
-    left: 1%;
-
-
+    display: none;
 }
 
-#ghost {
-
-    cursor: pointer;
-    width: 70px;
-    animation: animation-name 3s linear infinite;
-}
-
-#shadow-ghost {
-    border-radius: 50%;
-    display: flex;
-    width: 35%;
-    height: 10%;
-    background-color: grey;
-    animation: box-animation 3s linear infinite;
-}
-
-#messagem-ola-ghost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    position: absolute;
-    bottom: 120%;
-    height: 4rem;
-    width: max-content;
-    left: 5rem;
-    animation: animation-name 3s linear infinite;
-}
-
-.bubble {
-    transition: .5s;
-    background-color: black;
-    padding: .5rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 15px;
-}
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 150px;
+        height: 100px;
+        bottom: 5%;
+        left: 1%;
 
 
-.bubble::after {
-    content: '';
-    position: absolute;
-    bottom: -50px;
-    left: 10px;
-    width: 0px;
-    height: 0px;
-    border-top: 22px solid black;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    }
+
+    #ghost {
+
+        cursor: pointer;
+        width: 70px;
+        animation: animation-name 3s linear infinite;
+    }
+
+    #shadow-ghost {
+        border-radius: 50%;
+        display: flex;
+        width: 35%;
+        height: 10%;
+        background-color: grey;
+        animation: box-animation 3s linear infinite;
+    }
+
+    #messagem-ola-ghost {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        position: absolute;
+        bottom: 120%;
+        height: 4rem;
+        width: max-content;
+        left: 5rem;
+        animation: animation-name 3s linear infinite;
+    }
+
+    .bubble {
+        transition: .5s;
+        background-color: black;
+        padding: .5rem;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+
+    .bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: 10px;
+        width: 0px;
+        height: 0px;
+        border-top: 22px solid black;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+
+    }
+
 
 }
 
