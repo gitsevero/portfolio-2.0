@@ -10,19 +10,22 @@ setTimeout(function () {
 
 
 function ola() {
-    
+
     messagemContainergGhost.style.opacity = '1';
     setTimeout(function () {
         messagemContainergGhost.style.opacity = '0';
+
+
         setTimeout(function () {
-            if(lngs1.ingles=='on'){
-                messagemContainergGhost.innerHTML='Hello!';
-            }else{
-                messagemContainergGhost.innerHTML='Ola!';
+            messagemContainergGhost.innerHTML = '';
+            if (lngs1.ingles == 'on') {
+                messagemContainergGhost.innerHTML = 'Hello!';
+            } else {
+                messagemContainergGhost.innerHTML = 'Ola!';
             }
-           
-    
-        }, 1000);
+
+
+        }, 500);
 
     }, 5000);
 }

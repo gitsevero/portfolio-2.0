@@ -13,8 +13,11 @@ const instagramText = document.querySelector('#instagram-clone-grade');
 const portfolioBasicText = document.querySelector('#basic-portfolio-grade');
 const messageTextGhostTranslate = document.getElementById('message-text-ghost');
 
-
+let pessoaString = localStorage.getItem('lngs1');
 const lngs1 = { ingles: 'off' };
+if (JSON.parse(pessoaString)) {
+    lngs1.ingles = JSON.parse(pessoaString);
+}
 
 
 
@@ -70,17 +73,15 @@ function languageChanged(lingua) {
     }
 }
 
-let pessoaString = localStorage.getItem('lngs1');
-let lngs2 = JSON.parse(pessoaString);
+
 
 function startLanguage() {
 
 
 
-    if (lngs2.ingles === 'on') {
+    if (lngs1.ingles === 'on') {
         ingles();
-        messageTextGhostTranslate.innerHTML = 'Hello, I hope you like my portfolio';
-        document.getElementById("selectedOption").innerHTML = `<img src="/assets/img/flags/united-states.png" alt="bandeira do estados unidos"> ENG`;
+
 
     } else {
         portugues();

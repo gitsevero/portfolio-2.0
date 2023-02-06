@@ -70,7 +70,11 @@ function ingles() {
     portfolioBasicText.children[0].innerHTML = `portfolio`;
     portfolioBasicText.children[2].innerHTML = `A basic portfolio made only with Html and CSS`;
 
-    messageTextGhostTranslate.innerHTML='Hello!';
+    messageTextGhostTranslate.innerHTML = 'Hello, I hope you like my portfolio';
+    document.getElementById("selectedOption").innerHTML = `<img src="/assets/img/flags/united-states.png" alt="bandeira do estados unidos"> ENG`;
+
+
+
 
 
 
