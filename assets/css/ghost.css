@@ -9,9 +9,11 @@
     bottom: 5%;
     left: 1%;
 
+
 }
 
 #ghost {
+
     cursor: pointer;
     width: 70px;
     animation: animation-name 3s linear infinite;
@@ -27,19 +29,22 @@
 }
 
 #messagem-ola-ghost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     position: absolute;
-    top: -4.5rem;
-    right: -1rem;
-
+    bottom: 120%;
+    height: 4rem;
+    width: max-content;
+    left: 5rem;
     animation: animation-name 3s linear infinite;
 }
 
 .bubble {
     transition: .5s;
     background-color: black;
-    padding: 20px;
-    width: 90px;
+    padding: .5rem;
     color: white;
     font-weight: bold;
     text-align: center;
