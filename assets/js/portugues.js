@@ -95,6 +95,8 @@ function portugues() {
     portfolioBasicText.children[0].innerHTML = `portfólio`;
     portfolioBasicText.children[2].innerHTML = `Um portfólio basico feito apenas com Html e Css`;
 
+    
+
 
 
 

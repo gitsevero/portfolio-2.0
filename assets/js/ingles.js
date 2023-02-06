@@ -1,4 +1,5 @@
 function ingles() {
+    console.log('ta chamando')
     document.getElementById('sobremim').innerHTML = `<p class="about"> Hi, my name is Thierry Severo front-end developer focused on developing and optimizing website and app interfaces and improving user experience. I am a Systems Analysis and Development student at Cruzeiro do Sul University. I started studying to be a front-end developer in October 2022 and am committed to acquiring the necessary skills to become a qualified professional in the field.
     </p><p class="about">Although I don't have professional experience yet, I developed some academic projects that allowed me to practice my coding skills and improve my understanding of web development concepts. I am always looking for new challenges and opportunities to learn and grow as a developer.
     </p> <p class="about">I currently live in Uruguaiana, Rio Grande do Sul and am 23 years old. I am willing to work as a team, seeking to develop creative and innovative projects, and helping the company achieve its goals.
@@ -68,6 +69,8 @@ function ingles() {
 
     portfolioBasicText.children[0].innerHTML = `portfolio`;
     portfolioBasicText.children[2].innerHTML = `A basic portfolio made only with Html and CSS`;
+
+    messageTextGhostTranslate.innerHTML='Hello!';
 
 
 

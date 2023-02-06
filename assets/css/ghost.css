@@ -22,7 +22,7 @@
 #shadow-ghost {
     border-radius: 50%;
     display: flex;
-    width: 50%;
+    width: 35%;
     height: 10%;
     background-color: grey;
     animation: box-animation 3s linear infinite;

@@ -1,7 +1,7 @@
 const messagemContainergGhost = document.getElementById('messagem-ola-ghost')
 const ContainerGhost = document.querySelector('div.container');
 
-setTimeout(function ghost() {
+setTimeout(function () {
     ContainerGhost.style.opacity = '1';
     ola();
 }, 3000);
@@ -10,12 +10,19 @@ setTimeout(function ghost() {
 
 
 function ola() {
-    if (messagemContainergGhost.style.opacity == '0') {
-        document.getElementById('message-text-ghost').innerHTML = 'Ola!';
-    }
+    
     messagemContainergGhost.style.opacity = '1';
     setTimeout(function () {
         messagemContainergGhost.style.opacity = '0';
+        setTimeout(function () {
+            if(lngs1.ingles=='on'){
+                messagemContainergGhost.innerHTML='Hello!';
+            }else{
+                messagemContainergGhost.innerHTML='Ola!';
+            }
+           
+    
+        }, 1000);
 
     }, 5000);
 }
