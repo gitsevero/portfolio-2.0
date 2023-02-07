@@ -14,10 +14,26 @@ const portfolioBasicText = document.querySelector('#basic-portfolio-grade');
 const messageTextGhostTranslate = document.getElementById('message-text-ghost');
 
 let pessoaString = localStorage.getItem('lngs1');
-const lngs1 = { ingles: 'off' };
+let lngs1 = { ingles: 'off' };
 if (JSON.parse(pessoaString)) {
-    lngs1.ingles = JSON.parse(pessoaString);
+
+    lngs1 = JSON.parse(pessoaString);
+
 }
+
+
+function startLanguage() {
+
+    if (lngs1.ingles == 'on') {
+
+        ingles();
+
+    } else {
+        portugues();
+    }
+
+}
+
 
 
 
@@ -68,28 +84,11 @@ function languageChanged(lingua) {
     } else {
         portugues()
         lngs1.ingles = 'off';
+
         localStorage.setItem('lngs1', JSON.stringify(lngs1));
 
     }
 }
 
-
-
-function startLanguage() {
-
-
-
-    if (lngs1.ingles === 'on') {
-        ingles();
-
-
-    } else {
-        portugues();
-    }
-
-
-
-
-}
 
 
