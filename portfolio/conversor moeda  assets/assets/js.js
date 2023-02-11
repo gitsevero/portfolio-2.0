@@ -11,7 +11,7 @@ const converted = document.getElementById('converted')
 const cotacao = document.getElementById('contacao')
 const optionCreate = document.getElementById('saidaMoeda')
 const optionCreate2 = document.getElementById('entradaMoeda')
-const key = "89487f1e59-4ff9afddff-rpcdco"
+const key = "4ec7c64eef-a47d2a2277-rpva8v"
 
 const getWeatherData = async (moeda, base, quantia) => {
 

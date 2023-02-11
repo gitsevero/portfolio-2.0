@@ -10,3 +10,12 @@ function themme() {
 
     }
 }
+
+function aba() {
+    if (document.querySelector('.themeDiv').style.display == 'flex') {
+        document.querySelector('.themeDiv').style.display = 'none'
+    } else {
+
+        document.querySelector('.themeDiv').style.display = 'flex'
+    }
+};

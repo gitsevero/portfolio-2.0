@@ -76,6 +76,19 @@ header img {
     background-image: url('/assets/img/icons/github.svg');
 }
 
+#bar-header {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#bar-header img {
+    width: 15%;
+    height: 50px;
+}
+
 @media only screen and (min-width: 768px) {
 
 
@@ -110,6 +123,20 @@ header img {
         height: 160px;
 
     }
+
+    #bar-header {
+        position: relative;
+        width: 100%;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bar-header img {
+        width: 5%;
+        height: 50px;
+    }
+
 
 
     .info {
