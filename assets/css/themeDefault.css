@@ -14,8 +14,8 @@ body {
 
 .acordeon.open,
 .acordeon:hover {
-    background-color: #55569ed8;
-    border-color: #55569E;
+    background: linear-gradient(to right, rgb(175, 176, 210), rgb(105, 106, 169));
+    border-color: rgb(105, 106, 169);
 }
 
 .acordeon .trigger {

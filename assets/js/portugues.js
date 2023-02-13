@@ -9,7 +9,7 @@ function portugues() {
         de Análise e
         Desenvolvimento de Sistemas na
         Universidade Cruzeiro do Sul. Comecei a estudar para ser um desenvolvedor front-end em
-        outubro de 2022 e estou empenhado em adquirir as habilidades necessárias para se tornar um
+        agosto de 2022 e estou empenhado em adquirir as habilidades necessárias para se tornar um
         profissional qualificado na área.
     </p>
     <p class="about">
